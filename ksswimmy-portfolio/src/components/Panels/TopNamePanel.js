@@ -2,7 +2,7 @@ import React from 'react'
 import TopName from '../../SVG/TopName.svg'
 import styled from 'styled-components'
 
-
+// Will make the repetitive font-family property more dynamic
 
 const TopNameP = styled.div`
 position: absolute;
