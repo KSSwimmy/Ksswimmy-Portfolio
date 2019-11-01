@@ -4,11 +4,16 @@ import styled from 'styled-components'
 
 // Will make the repetitive font-family property more dynamic
 
+
+
 const TopNameP = styled.div`
 position: absolute;
 margin-top: -1px
 margin: -22px 
 width: 100%
+
+.heading {font-family: 'Exo 2', sans-serif};
+
 `;
 
 const Para = styled.h1`
@@ -18,8 +23,8 @@ position: absolute;
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
-  font-family: 'Exo 2', sans-serif;
-   
+  
+
 `;
 
 const ParaTwo = styled.h1`
@@ -29,7 +34,7 @@ position: absolute;
   font-size: 2.5rem;
   font-weight: bold;
   color: #813CD9
-  font-family: 'Exo 2', sans-serif;
+  
    
 `;
 
@@ -40,7 +45,7 @@ position: absolute;
   font-size: 2.5rem;
   font-weight: bolder;
   color: #17135D
-  font-family: 'Exo 2', sans-serif;
+  
    
 `;
 
@@ -67,15 +72,15 @@ const TopNamePanel = () => {
         PORTFOLIO
     </Portfolio>  
 
-    <ParaThree> 
+    <ParaThree className="heading"> 
         KIMBERLY SWINTON'S 
     </ParaThree>   
     
-    <ParaTwo> 
+    <ParaTwo className="heading"> 
         KIMBERLY SWINTON'S 
     </ParaTwo> 
         
-    <Para> 
+    <Para className="heading"> 
         KIMBERLY SWINTON'S 
     </Para>
 
