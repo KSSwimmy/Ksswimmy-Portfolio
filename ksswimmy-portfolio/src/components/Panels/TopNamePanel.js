@@ -12,9 +12,12 @@ margin-top: -1px
 margin: -22px 
 width: 100%
 
+
 .heading {font-family: 'Exo 2', sans-serif};
 
 `;
+
+// want to change .heading into a prop to use across the app
 
 const Para = styled.h1`
 position: absolute;
