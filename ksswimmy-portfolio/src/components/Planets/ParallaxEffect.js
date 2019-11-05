@@ -1,14 +1,18 @@
 import React from 'react'
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
+import styled from 'styled-components'
 
-
+const Tester = styled.h1`
+    color: white
+`
 
 
 //functional component
 const ParallaxEffect = () => {
     let parallax;
   return (
-    <Parallax pages={2} ref={ref => parallax = ref}>
+<Tester>
+    <Parallax className="layer" pages={2} ref={ref => parallax = ref}>
       <ParallaxLayer offset={0.3} speed={0}>
         <span>Scroll down!</span>
       </ParallaxLayer>
@@ -22,6 +26,7 @@ const ParallaxEffect = () => {
         <span>I'm going in the other direction!</span>
       </ParallaxLayer>
     </Parallax>
+</Tester>
   );
 }
 
