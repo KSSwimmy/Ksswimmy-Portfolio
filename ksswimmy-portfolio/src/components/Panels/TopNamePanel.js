@@ -1,6 +1,7 @@
 import React from 'react'
 import TopName from '../../SVG/TopName.svg'
 import styled from 'styled-components'
+import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 
 // Will make the repetitive font-family property more dynamic
 
@@ -18,6 +19,10 @@ width: 100%
 `;
 
 // want to change .heading into a prop to use across the app
+// will look for animation for the slides or use parallax on them. 
+// timer for parallax slides?
+//jnsefnekn 
+
 
 const Para = styled.h1`
 position: absolute;
@@ -25,7 +30,7 @@ position: absolute;
   left: 46px;
   font-size: 2.5rem;
   font-weight: bold;
-  color: white;
+  color: white
   
 
 `;
@@ -64,8 +69,18 @@ position: absolute;
    
 `;
 
+class TopNamePanel extends React.Component {
+  render() { 
+    const TopNP =
+    return (  );
+  }
+}
+ 
+
+
 const TopNamePanel = () => {
     return ( 
+
     <TopNameP>        
         <img  
         src={TopName} 

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import styled from 'styled-components'
+import TheSun from '../../SVG/sun.svg'
 
 const Tester = styled.h1`
     color: white
