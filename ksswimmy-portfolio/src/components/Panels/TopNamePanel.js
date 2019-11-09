@@ -1,7 +1,7 @@
 import React from 'react'
 import TopName from '../../SVG/TopName.svg'
 import styled from 'styled-components'
-import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
+import {Transition} from 'react-spring/renderprops'
 
 // Will make the repetitive font-family property more dynamic
 
@@ -69,12 +69,6 @@ position: absolute;
    
 `;
 
-class TopNamePanel extends React.Component {
-  render() { 
-    const TopNP =
-    return (  );
-  }
-}
  
 
 
