@@ -3,19 +3,13 @@ import TopName from '../../SVG/TopName.svg'
 import styled from 'styled-components'
 import {Transition} from 'react-spring/renderprops'
 
-// Will make the repetitive font-family property more dynamic
-
-
 
 const TopNameP = styled.div`
 position: absolute;
 margin-top: -1px
 margin: -22px 
 width: 100%
-
-
 .heading {font-family: 'Exo 2', sans-serif};
-
 `;
 
 // will look for animation for the slides or use parallax on them. 
@@ -31,7 +25,6 @@ position: absolute;
   font-weight: bold;
   color: white
   
-
 `;
 
 const ParaTwo = styled.h1`
@@ -94,11 +87,11 @@ const TopNamePanel = () => {
     <Para className="heading"> 
         KIMBERLY SWINTON'S 
     </Para>
-
     </TopNameP>
     
     );
 };
+
 
 
 

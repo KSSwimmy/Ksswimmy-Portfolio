@@ -8,9 +8,10 @@ import ParallaxEffect from './components/Planets/ParallaxEffect';
 function App() {
   return (
     <div className="App">
+      <ParallaxEffect />
       <TitlePanel /> 
       <TopNamePanel />
-      <ParallaxEffect />
+      
     </div>
   );
 }
