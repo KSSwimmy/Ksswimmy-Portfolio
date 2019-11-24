@@ -18,7 +18,6 @@ width: 100%
 
 `;
 
-// want to change .heading into a prop to use across the app
 // will look for animation for the slides or use parallax on them. 
 // timer for parallax slides?
 //jnsefnekn 
