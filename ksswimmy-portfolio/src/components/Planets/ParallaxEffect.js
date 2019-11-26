@@ -26,26 +26,16 @@ const ParallaxEffect = () => {
 
     <Parallax className="layer" pages={4} ref={ref => parallax = ref}>
 
-    <Tester>
+ 
 
       <PlanetDiv className="sunDiv">
-        <ParallaxLayer offset={0} speed={0}>
-          <span>
+        <ParallaxLayer offset={0} speed={0} style={{display: 'flex', alignItems:'center', alignContent: 'center'}}>
+          
             <img
-          style={{width:'100%'}, {paddingBottom: 700}}  
+          style={{width:'30%', marginLeft: '-5%'}}  
           src={TheSun} 
           alt="sun" />
-          </span>
-        </ParallaxLayer>
-      </PlanetDiv>
-
-      <PlanetDiv className="earthDiv">
-        <ParallaxLayer offset={1.2} speed={1}>
-          <span><img
-          style={{width:'100%'}}  
-          src={Earth} 
-          alt="Earth" />
-          </span>
+          
         </ParallaxLayer>
       </PlanetDiv>
 
@@ -59,18 +49,29 @@ const ParallaxEffect = () => {
         </ParallaxLayer>
       </PlanetDiv>
 
-      <PlanetDiv className="jupiterDiv">
+     
         <ParallaxLayer speed={-0.2} offset={1.3}>
           <span>
               <img
-            style={{width:'100%'}}  
+            style={{width:'20%'}}  
             src={Mars} 
             alt="Mars" />
             </span>
         </ParallaxLayer>
-      </PlanetDiv>
 
-    </Tester>
+
+      
+        <ParallaxLayer offset={3.3} speed={-0.4} style={{display: 'flex', alignItems:'center', alignContent: 'center', pointerEvents: 'none'}}>
+          <img
+          style={{width:'40%'}}  
+          src={Earth} 
+          alt="Earth" />
+        </ParallaxLayer>
+      
+
+     
+
+ 
 
   </Parallax>
 

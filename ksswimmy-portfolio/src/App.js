@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <ParallaxEffect />
-      <TitlePanel /> 
-      <TopNamePanel />
+      {/* <TitlePanel /> 
+      <TopNamePanel /> */}
       
     </div>
   );
