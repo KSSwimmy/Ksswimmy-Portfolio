@@ -7,6 +7,7 @@ import Earth from '../../SVG/earth.svg'
 import Jupiter from '../../SVG/jupiter.svg'
 import Mars from '../../SVG/mars.svg'
 import Mercury from '../../SVG/mercury.svg'
+import Venus from '../../SVG/venus.svg'
 
 const Tester = styled.div`
     
@@ -30,24 +31,29 @@ const ParallaxEffect = () => {
  
 
       
-        <ParallaxLayer offset={-0.1} speed={0}>
+        <ParallaxLayer offset={0} speed={0.5}>
             <img
-          style={{width:'20%', marginLeft: '-3%', marginTop: '4%'}}  
+          style={{width:'20%', marginLeft: '-3%'}}  
           src={TheSun} 
           alt="sun" />
         </ParallaxLayer>
 
 
-        <ParallaxLayer offset={0} speed={1.5}>
+        <ParallaxLayer offset={0} speed={2.7}>
             <img
-          style={{width:'20%', marginLeft: '70%', marginTop:'3%'}}  
+          style={{width:'20%', marginLeft: '70%', marginTop:'10%'}}  
           src={Mercury} 
-          alt="sun" />
+          alt="mercury" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0.6} speed={0} style={{ opacity: 0.7 }}>
+            <img
+          style={{width:'3%', marginLeft: '30%'}}  
+          src={Venus} 
+          alt="venus" />
         </ParallaxLayer>
       
-
-      
-        <ParallaxLayer offset={0.9} speed={3}>
+        <ParallaxLayer offset={3} speed={3}>
           <span>
             <img
           style={{width:'100%'}}  
@@ -57,7 +63,7 @@ const ParallaxEffect = () => {
       
 
      
-        <ParallaxLayer speed={-0.2} offset={1.3}>
+        <ParallaxLayer speed={-0.2} offset={2}>
           <span>
               <img
             style={{width:'20%'}}  
@@ -68,9 +74,9 @@ const ParallaxEffect = () => {
 
 
       
-        <ParallaxLayer offset={3.3} speed={-0.4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <ParallaxLayer offset={0.9} speed={2.9}>
           <img
-          style={{width:'40%'}}  
+          style={{width:'45%', marginTop:'20%', marginLeft: '30%'}}  
           src={Earth} 
           alt="Earth" />
         </ParallaxLayer>
