@@ -6,6 +6,7 @@ import TheSun from '../../SVG/sun.svg'
 import Earth from '../../SVG/earth.svg'
 import Jupiter from '../../SVG/jupiter.svg'
 import Mars from '../../SVG/mars.svg'
+import Mercury from '../../SVG/mercury.svg'
 
 const Tester = styled.div`
     
@@ -28,18 +29,24 @@ const ParallaxEffect = () => {
 
  
 
-      <PlanetDiv className="sunDiv">
-        <ParallaxLayer offset={0} speed={0} style={{display: 'flex', alignItems:'center', alignContent: 'center'}}>
-          
+      
+        <ParallaxLayer offset={-0.1} speed={0}>
             <img
-          style={{width:'30%', marginLeft: '-5%'}}  
+          style={{width:'20%', marginLeft: '-3%', marginTop: '4%'}}  
           src={TheSun} 
           alt="sun" />
-          
         </ParallaxLayer>
-      </PlanetDiv>
 
-      <PlanetDiv className="jupiterDiv">
+
+        <ParallaxLayer offset={0} speed={1.5}>
+            <img
+          style={{width:'20%', marginLeft: '70%', marginTop:'3%'}}  
+          src={Mercury} 
+          alt="sun" />
+        </ParallaxLayer>
+      
+
+      
         <ParallaxLayer offset={0.9} speed={3}>
           <span>
             <img
@@ -47,7 +54,7 @@ const ParallaxEffect = () => {
           src={Jupiter} 
           alt="Jupiter" /></span>
         </ParallaxLayer>
-      </PlanetDiv>
+      
 
      
         <ParallaxLayer speed={-0.2} offset={1.3}>
@@ -61,7 +68,7 @@ const ParallaxEffect = () => {
 
 
       
-        <ParallaxLayer offset={3.3} speed={-0.4} style={{display: 'flex', alignItems:'center', alignContent: 'center', pointerEvents: 'none'}}>
+        <ParallaxLayer offset={3.3} speed={-0.4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <img
           style={{width:'40%'}}  
           src={Earth} 
