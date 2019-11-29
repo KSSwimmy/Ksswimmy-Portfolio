@@ -8,6 +8,7 @@ import Jupiter from '../../SVG/jupiter.svg'
 import Mars from '../../SVG/mars.svg'
 import Mercury from '../../SVG/mercury.svg'
 import Venus from '../../SVG/venus.svg'
+import Moon from '../../SVG/moon.svg'
 
 const Tester = styled.div`
     
@@ -31,42 +32,49 @@ const ParallaxEffect = () => {
  
 
       
-        <ParallaxLayer offset={0} speed={0.5}>
+        <ParallaxLayer offset={0} 
+                       speed={0.5}>
             <img
           style={{width:'20%', marginLeft: '-3%'}}  
           src={TheSun} 
-          alt="sun" />
+          alt="Sun" />
         </ParallaxLayer>
 
 
-        <ParallaxLayer offset={0} speed={2.7}>
+        <ParallaxLayer offset={0} 
+                       speed={2.7}>
             <img
           style={{width:'20%', marginLeft: '70%', marginTop:'10%'}}  
-          src={Mercury} 
-          alt="mercury" />
+          src={Venus} 
+          alt="Venus" />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.6} speed={0} style={{ opacity: 0.7 }}>
+        <ParallaxLayer offset={0.6} 
+                       speed={0}
+                       style={{ opacity: 0.7 }}>
             <img
           style={{width:'3%', marginLeft: '30%'}}  
-          src={Venus} 
-          alt="venus" />
+          src={Mercury} 
+          alt="Mercury" />
         </ParallaxLayer>
+
       
-        <ParallaxLayer offset={3} speed={3}>
+        <ParallaxLayer offset={3} 
+                       speed={4}>
           <span>
             <img
-          style={{width:'100%'}}  
+          style={{width:'50%'}}  
           src={Jupiter} 
           alt="Jupiter" /></span>
         </ParallaxLayer>
       
 
      
-        <ParallaxLayer speed={-0.2} offset={2}>
+        <ParallaxLayer speed={2} 
+                       offset={2}>
           <span>
               <img
-            style={{width:'20%'}}  
+            style={{width:'20%', marginLeft: '30%'}}  
             src={Mars} 
             alt="Mars" />
             </span>
@@ -74,11 +82,20 @@ const ParallaxEffect = () => {
 
 
       
-        <ParallaxLayer offset={0.9} speed={2.9}>
+        <ParallaxLayer offset={0.95} 
+                       speed={2.15}>
           <img
-          style={{width:'45%', marginTop:'20%', marginLeft: '30%'}}  
+          style={{width:'45%', marginTop:'20%', marginLeft: '15%'}}  
           src={Earth} 
           alt="Earth" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0.95} 
+                       speed={0.70}>
+          <img
+          style={{width:'8.10%', marginTop:'3%', marginLeft: '85%'}}  
+          src={Moon} 
+          alt="Moon" />
         </ParallaxLayer>
       
 
