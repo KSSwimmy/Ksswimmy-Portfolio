@@ -9,6 +9,7 @@ import Mars from '../../SVG/mars.svg'
 import Mercury from '../../SVG/mercury.svg'
 import Venus from '../../SVG/venus.svg'
 import Moon from '../../SVG/moon.svg'
+import Satellite from '../../SVG/satellite.svg'
 
 const Tester = styled.div`
     
@@ -53,7 +54,7 @@ const ParallaxEffect = () => {
                        speed={0}
                        style={{ opacity: 0.7 }}>
             <img
-          style={{width:'3%', marginLeft: '30%'}}  
+          style={{width:'2%', marginLeft: '30%'}}  
           src={Mercury} 
           alt="Mercury" />
         </ParallaxLayer>
@@ -85,9 +86,17 @@ const ParallaxEffect = () => {
         <ParallaxLayer offset={0.95} 
                        speed={2.15}>
           <img
-          style={{width:'45%', marginTop:'20%', marginLeft: '15%'}}  
+          style={{width:'45%', marginTop:'20%', marginLeft: '25%'}}  
           src={Earth} 
           alt="Earth" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0.95} 
+                       speed={2}>
+          <img
+          style={{width:'15%', marginTop:'23%', marginLeft: '10%'}}  
+          src={Satellite} 
+          alt="Satellite" />
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.95} 
