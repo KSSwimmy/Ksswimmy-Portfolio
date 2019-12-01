@@ -81,7 +81,6 @@ const ParallaxEffect = () => {
             </span>
         </ParallaxLayer>
 
-
       
         <ParallaxLayer offset={0.95} 
                        speed={2.15}>
@@ -92,9 +91,9 @@ const ParallaxEffect = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.95} 
-                       speed={2}>
+                       speed={1.5}>
           <img
-          style={{width:'15%', marginTop:'23%', marginLeft: '10%'}}  
+          style={{width:'13%', marginTop:'5%', marginLeft: '17%'}}  
           src={Satellite} 
           alt="Satellite" />
         </ParallaxLayer>
