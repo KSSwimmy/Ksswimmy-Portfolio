@@ -10,9 +10,10 @@ import Mercury from '../../SVG/mercury.svg'
 import Venus from '../../SVG/venus.svg'
 import Moon from '../../SVG/moon.svg'
 import Satellite from '../../SVG/satellite.svg'
+import LandingPageStars from '../../SVG/landingPageStars.svg'
 
 const Tester = styled.div`
-    
+background-color: linear-gradient(180deg, rgba(39,114,179,1) 0%, rgba(6,83,149,1) 14%, rgba(17,39,101,1) 55%, rgba(99,27,135,1) 96%);  
 
 `
 
@@ -29,8 +30,10 @@ const ParallaxEffect = () => {
 
 
     <Parallax className="layer" pages={4} ref={ref => parallax = ref}>
+      
+      <Tester>
 
- 
+      <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
 
       
         <ParallaxLayer offset={0} 
@@ -106,9 +109,8 @@ const ParallaxEffect = () => {
           alt="Moon" />
         </ParallaxLayer>
       
-
+        </Tester>
      
-
  
 
   </Parallax>
