@@ -1,7 +1,7 @@
 import React from 'react'
 import TopName from '../../SVG/TopName.svg'
 import styled from 'styled-components'
-import {Transition} from 'react-spring/renderprops'
+
 
 
 const TopNameP = styled.div`

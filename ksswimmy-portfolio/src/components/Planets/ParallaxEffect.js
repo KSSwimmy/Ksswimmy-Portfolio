@@ -24,20 +24,13 @@ height: 100vh;
 
 `
 
-const PlanetDiv = styled.div`
-.ChildContainer
-
-`
-
 
 //functional component
 const ParallaxEffect = () => {
+    // eslint-disable-next-line
     let parallax;
   return (
 
-    
-      
-    
   <Page>
     <Parallax className="layer" pages={3} ref={ref => parallax = ref}>
       
@@ -50,6 +43,7 @@ const ParallaxEffect = () => {
       
       {/* <ParallaxLayer offset={1.9} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} /> */}
 
+      
       
         <ParallaxLayer offset={0} 
                        speed={0.8}>
@@ -157,8 +151,14 @@ const ParallaxEffect = () => {
           alt="Pluto" />
         </ParallaxLayer>
  
+        <ParallaxLayer>
+          <TitlePanel />
+        </ParallaxLayer>
 
-  </Parallax>
+        <ParallaxLayer>
+          <TopNamePanel />
+        </ParallaxLayer>
+    </Parallax>
   </Page>
   );
 }
