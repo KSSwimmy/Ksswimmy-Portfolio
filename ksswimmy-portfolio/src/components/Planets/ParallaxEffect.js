@@ -12,12 +12,16 @@ import Mercury from '../../SVG/mercury.svg'
 import Venus from '../../SVG/venus.svg'
 import Moon from '../../SVG/moon.svg'
 import Satellite from '../../SVG/satellite.svg'
-import LandingPageStars from '../../SVG/landingPageStars.svg'
+import LandingPageStars from '../../SVG/LittleStars.svg'
+import LandingPageBiggerStars from '../../SVG/BIGGERSTARS.svg'
+import Neptune from '../../SVG/neptune.svg'
+import Uranus from '../../SVG/uranus.svg'
+import Pluto from '../../SVG/pluto.svg'
 
 const Page = styled.div`
 width: 100%;
 height: 100vh;
-margin-bottom: 10px;
+
 `
 
 const PlanetDiv = styled.div`
@@ -35,20 +39,20 @@ const ParallaxEffect = () => {
       
     
   <Page>
-    <Parallax className="layer" pages={4} ref={ref => parallax = ref}>
+    <Parallax className="layer" pages={3} ref={ref => parallax = ref}>
       
 
+      {/* background color */}
+      <ParallaxLayer offset={0} factor={3} style={{ background: 'linear-gradient(180deg, rgba(6,83,149,1) 2%, rgba(17,39,101,1) 51%, rgba(99,27,135,1) 96%)', backgroundSize: 'cover'  }} />
       
-      <ParallaxLayer offset={0} speed={1} factor={8} style={{ background: 'linear-gradient(180deg, rgba(39,114,179,1) 0%, rgba(6,83,149,1) 30%, rgba(17,39,101,1) 62%, rgba(99,27,135,1) 96%)rgb(39,114,179)', backgroundSize: 'cover'  }} />
+      <ParallaxLayer offset={0} factor={3} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
+      <ParallaxLayer offset={0} speed={0.3} factor={3} style={{ backgroundImage: `url(${LandingPageBiggerStars})`, backgroundSize: 'cover' }} />
       
-      <ParallaxLayer offset={0} speed={0.3} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
-      <ParallaxLayer offset={0.6} speed={0.3} factor={2} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
-      <ParallaxLayer offset={1} speed={0.5} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
-      <ParallaxLayer offset={2} speed={0.7} factor={2} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
+      {/* <ParallaxLayer offset={1.9} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} /> */}
 
       
         <ParallaxLayer offset={0} 
-                       speed={0.5}>
+                       speed={0.8}>
             <img
           style={{width:'20%', marginLeft: '-3%'}}  
           src={TheSun} 
@@ -65,7 +69,7 @@ const ParallaxEffect = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.6} 
-                       speed={0}
+                       speed={0.5}
                        >
             <img
           style={{width:'3%', marginLeft: '30%'}}  
@@ -74,11 +78,11 @@ const ParallaxEffect = () => {
         </ParallaxLayer>
 
       
-        <ParallaxLayer offset={1.9} 
-                       speed={2}>
+        <ParallaxLayer offset={1.8} 
+                       speed={3}>
           <span>
             <img
-          style={{marginTop:'20%', marginLeft: '25%', width:'20%'}}  
+          style={{marginLeft: '25%', width:'20%'}}  
           src={Jupiter} 
           alt="Jupiter" />
           </span>
@@ -88,7 +92,7 @@ const ParallaxEffect = () => {
                        offset={1}>
           <span>
               <img
-            style={{width:'8%', marginLeft: '10%', marginTop:'-10%'}}  
+            style={{width:'8%', marginLeft: '10%', marginTop:'10%'}}  
             src={Saturn} 
             alt="Saturn" />
             </span>
@@ -96,17 +100,16 @@ const ParallaxEffect = () => {
      
         <ParallaxLayer speed={3} 
                        offset={1}>
-          <span>
+          
               <img
             style={{width:'30%', marginLeft: '60%', marginTop:'-10%'}}  
             src={Mars} 
             alt="Mars" />
-            </span>
         </ParallaxLayer>
 
       
         <ParallaxLayer offset={0.95} 
-                       speed={2.15}>
+                       speed={3}>
           <img
           style={{width:'45%', marginTop:'20%', marginLeft: '25%'}}  
           src={Earth} 
@@ -114,7 +117,7 @@ const ParallaxEffect = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.95} 
-                       speed={1.5}>
+                       speed={3}>
           <img
           style={{width:'13%', marginTop:'5%', marginLeft: '17%'}}  
           src={Satellite} 
@@ -122,7 +125,7 @@ const ParallaxEffect = () => {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.95} 
-                       speed={1.3}>
+                       speed={3}>
           <img
           style={{width:'10%', marginTop:'3%', marginLeft: '85%'}}  
           src={Moon} 
@@ -130,7 +133,29 @@ const ParallaxEffect = () => {
         </ParallaxLayer>
       
        
-     
+        <ParallaxLayer offset={1.9} 
+                       speed={2}>
+          <img
+          style={{width:'10%', marginTop:'20%', marginLeft: '80%'}}  
+          src={Neptune} 
+          alt="Neptune" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1.9} 
+                       speed={1.3}>
+          <img
+          style={{width:'10%', marginTop:'40%', marginLeft: '5%'}}  
+          src={Uranus} 
+          alt="Uranus" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1.9} 
+                       speed={1.3}>
+          <img
+          style={{width:'10%', marginTop:'56%', marginLeft: '85%'}}  
+          src={Pluto} 
+          alt="Pluto" />
+        </ParallaxLayer>
  
 
   </Parallax>
