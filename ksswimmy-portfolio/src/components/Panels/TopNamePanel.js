@@ -14,14 +14,14 @@ width: 100%
 
 // will look for animation for the slides or use parallax on them. 
 // timer for parallax slides?
-//jnsefnekn 
+
 
 
 const Para = styled.h1`
 position: absolute;
   top: 37px;
   left: 46px;
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-weight: bold;
   color: white
   
@@ -31,7 +31,7 @@ const ParaTwo = styled.h1`
 position: absolute;
   top: 40px;
   left: 50px;
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-weight: bold;
   color: #813CD9
   
@@ -42,8 +42,8 @@ const ParaThree = styled.h1`
 position: absolute;
   top: 46px;
   left: 55px;
-  font-size: 2.5rem;
-  font-weight: bolder;
+  font-size: 5rem;
+  font-weight: bold;
   color: #17135D
   
    
@@ -53,7 +53,7 @@ const Portfolio = styled.h1`
 position: absolute;
   top: 100px;
   left: 145px;
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-weight: 200;
   font-style: italic
   color: white
@@ -77,7 +77,7 @@ const TopNamePanel = () => {
     </Portfolio>  
 
     <ParaThree className="heading"> 
-        KIMBERLY SWINTON'S 
+        KIMBERLY SWINTON's
     </ParaThree>   
     
     <ParaTwo className="heading"> 

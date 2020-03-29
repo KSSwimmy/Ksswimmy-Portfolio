@@ -1,10 +1,20 @@
- /* body {
-  background: linear-gradient(180deg, rgba(39,114,179,1) 0%, rgba(6,83,149,1) 14%, rgba(17,39,101,1) 55%, rgba(99,27,135,1) 96%, rgba(19,11,23,1) 100%);
-} */
+@import-normalize; /* bring in normalize.css styles */
+/* rest of app styles */
 
+html, body, .App {
+  height: 100%;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+  color: #DCE3FF;
+  font-size: 10px;
+}
 
-/*
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
+h1, h2, h3, h4, h5 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+  color: #DCE3FF;
+ 
+  
+}
+
+/*-------------------------------------------------------------------------------------------------*/
