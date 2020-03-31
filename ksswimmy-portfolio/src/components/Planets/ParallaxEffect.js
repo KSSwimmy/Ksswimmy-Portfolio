@@ -17,6 +17,8 @@ import LandingPageBiggerStars from '../../SVG/BIGGERSTARS.svg'
 import Neptune from '../../SVG/neptune.svg'
 import Uranus from '../../SVG/uranus.svg'
 import Pluto from '../../SVG/pluto.svg'
+import AboutMe from '../AboutMe/AboutMe'
+import Skills from '../Skills'
 
 const Page = styled.div`
 width: 100%;
@@ -32,8 +34,7 @@ const ParallaxEffect = () => {
   return (
 
   <Page>
-    <Parallax className="layer" pages={3} ref={ref => parallax = ref}>
-      
+    <Parallax className="layer" pages={5} ref={ref => parallax = ref}>
 
       {/* background color */}
       <ParallaxLayer offset={0} factor={3} style={{ background: 'linear-gradient(180deg, rgba(6,83,149,1) 2%, rgba(17,39,101,1) 51%, rgba(99,27,135,1) 96%)', backgroundSize: 'cover'  }} />
@@ -43,7 +44,7 @@ const ParallaxEffect = () => {
       
       {/* <ParallaxLayer offset={1.9} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} /> */}
 
-      
+  
       
         <ParallaxLayer offset={0} 
                        speed={0.8}>
@@ -150,6 +151,14 @@ const ParallaxEffect = () => {
           src={Pluto} 
           alt="Pluto" />
         </ParallaxLayer>
+
+        <ParallaxLayer offset={3}>
+          <AboutMe />
+        </ParallaxLayer>
+
+        {/* <ParallaxLayer offset={4}>
+          <Skills />
+        </ParallaxLayer> */}
  
         <ParallaxLayer>
           <TitlePanel />
@@ -158,6 +167,8 @@ const ParallaxEffect = () => {
         <ParallaxLayer>
           <TopNamePanel />
         </ParallaxLayer>
+
+       
     </Parallax>
   </Page>
   );

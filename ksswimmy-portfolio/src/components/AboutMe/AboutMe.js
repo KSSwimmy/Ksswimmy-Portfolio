@@ -17,6 +17,7 @@ margin-left: -35px;
 width: 100%;
 height: 100vh;
 display: flex;
+margin-top: 75px;
 `
 const Me = styled.div`
 width: 400px
@@ -26,6 +27,7 @@ margin: 100px 20px 20px 80px;
 const AboutBorderDiv = styled.div`
 width: 300px;
 margin-bottom: 40px;
+margin-left: 90px;
 `
 const About = styled.h1`
 font-weight: 900;
@@ -46,7 +48,7 @@ color: #DCE3FF;
 `
 const TheParagraphDiv = styled.div`
 font-size: 2.2rem;
-width: 550px;
+width: 530px;
 `
 
 
@@ -57,7 +59,7 @@ const AboutMe = () => {
     <Page>
         <Parallax className="layer" pages={1} ref={ref => parallax = ref}> 
             <ParallaxLayer offset={0} factor={1} style={{ background: 'linear-gradient(180deg, rgba(99,27,135,1) 0%, rgba(17,39,101,1) 8%, rgba(28,0,73,1) 97%)', backgroundSize: 'cover'  }} />
-            <ParallaxLayer offset={0} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
+            <ParallaxLayer offset={0.1} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
 
 
             <ParallaxLayer>
