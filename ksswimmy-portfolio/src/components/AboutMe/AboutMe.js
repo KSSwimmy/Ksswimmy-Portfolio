@@ -25,9 +25,9 @@ text-align: center;
 margin: 100px 20px 20px 80px;
 `
 const AboutBorderDiv = styled.div`
+text-align: center;
 width: 300px;
-margin-bottom: 40px;
-margin-left: 90px;
+margin: 0 auto;
 `
 const About = styled.h1`
 font-weight: 900;
@@ -45,6 +45,7 @@ const SecP = styled.div`
 const TheHTwo = styled.h2`
 font-weight: 400;
 color: #DCE3FF;
+margin-top: 40px;
 `
 const TheParagraphDiv = styled.div`
 font-size: 2.2rem;

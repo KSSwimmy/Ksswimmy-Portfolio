@@ -156,15 +156,15 @@ const ParallaxEffect = () => {
           <AboutMe />
         </ParallaxLayer>
 
-        {/* <ParallaxLayer offset={4}>
+        <ParallaxLayer offset={4}>
           <Skills />
-        </ParallaxLayer> */}
+        </ParallaxLayer>
  
-        <ParallaxLayer>
+        <ParallaxLayer offset={0}>
           <TitlePanel />
         </ParallaxLayer>
 
-        <ParallaxLayer>
+        <ParallaxLayer offset={0}>
           <TopNamePanel />
         </ParallaxLayer>
 
