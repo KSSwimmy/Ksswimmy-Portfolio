@@ -3,6 +3,8 @@ import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import styled from 'styled-components'
 import LandingPageStars from '../../SVG/bodyStars.svg'
 import MyPic from '../../SVG/me.jpg'
+import Skills from '../Skills'
+
 
 
 
@@ -59,7 +61,7 @@ const AboutMe = () => {
   return (
     <Page>
         <Parallax className="layer" pages={1} ref={ref => parallax = ref}> 
-            <ParallaxLayer offset={0} factor={1} style={{ background: 'linear-gradient(180deg, rgba(99,27,135,1) 0%, rgba(17,39,101,1) 8%, rgba(28,0,73,1) 97%)', backgroundSize: 'cover'  }} />
+            
             <ParallaxLayer offset={0.1} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
 
 
@@ -86,6 +88,8 @@ const AboutMe = () => {
                         </SecP>
                     </TheParagraphDiv>
                 </AboutMeDiv>
+
+                
             </ParallaxLayer>
 
         </Parallax>

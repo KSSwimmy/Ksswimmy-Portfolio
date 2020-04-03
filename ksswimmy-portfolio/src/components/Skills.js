@@ -26,7 +26,7 @@ align-items: center;
 
  
 `
-const SubtDiv = styled.div`
+const SubtDiv = styled.h2`
 font-weight: 900;
 margin: 0 auto;
 color: #DCE3FF;
@@ -41,6 +41,7 @@ lex-direction: row;
 justify-content: space-evenly;
 text-align: center;
 margin: 0 auto;
+
 `
 const Circles = styled.div`
 width: 186px;
@@ -75,6 +76,31 @@ width: 300px;
 margin: 0 auto;
 
 `
+const SkillDesripContainer = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+`
+const PL = styled.div`
+text-align: center;
+width: 500px;
+margin: 15px;
+`
+
+const Serve = styled.ul`
+list-style-type: none;
+text-align: center;
+margin: 15px;
+font-size: 2.2rem;
+`
+const Ht = styled.h2`
+font-weight: 900;
+margin: 0 auto;
+color: #DCE3FF;
+font-size: 3.5rem;
+
+`
 
 const Skills = () => {
     // eslint-disable-next-line
@@ -82,7 +108,7 @@ const Skills = () => {
   return (
     <Page>
         <Parallax className="layer" pages={1} ref={ref => parallax = ref}> 
-            <ParallaxLayer offset={0} factor={1} style={{ backgroundColor: '#1c0049', backgroundSize: 'cover'  }} />
+            
             <ParallaxLayer offset={0.1} factor={1} style={{ backgroundImage: `url(${LandingPageStars})`, backgroundSize: 'cover' }} />
 
             <ParallaxLayer>
@@ -148,8 +174,23 @@ const Skills = () => {
                         <NumberDiv>5</NumberDiv> 
                         <Sub>Repeat</Sub>
                     </Circles>
-                </CircleDiv>
+                </CircleDiv >
             </CenteredContainer>
+
+            <SkillDesripContainer style={{borderTopStyle: 'solid',
+                                   borderTopColor: '#DCE3FF', borderWidth: 'thin', margin: '50px'}}>
+                <PL>
+                    <Ht>PROGRAMMING LANGUAGES</Ht>
+                </PL>
+                <Serve>
+                    <Ht>SERVICES</Ht>
+                    <li>Website Development</li>
+                    <li>Website Design</li>
+                    <li>Logos</li>
+                    <li>Corporate Identity</li>
+                    <li>Flyers, Brochures, Posters, etc</li>
+                </Serve>
+            </SkillDesripContainer>
             </ParallaxLayer>
 
 
