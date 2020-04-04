@@ -3,6 +3,12 @@ import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import styled from 'styled-components'
 import LandingPageStars from '../SVG/bodyStars.svg'
 import Arrow from '../SVG/arrow.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons'
+
+
+
+
 
 const Page = styled.div`
 width: 100%;
@@ -87,6 +93,13 @@ text-align: center;
 width: 500px;
 margin: 15px;
 `
+const Icons = styled.span`
+font-size: 6rem;
+text-align: center;
+display: flex;
+
+
+`
 
 const Serve = styled.ul`
 list-style-type: none;
@@ -101,6 +114,7 @@ color: #DCE3FF;
 font-size: 3.5rem;
 
 `
+
 
 const Skills = () => {
     // eslint-disable-next-line
@@ -181,6 +195,10 @@ const Skills = () => {
                                    borderTopColor: '#DCE3FF', borderWidth: 'thin', margin: '50px'}}>
                 <PL>
                     <Ht>PROGRAMMING LANGUAGES</Ht>
+                    <Icons>
+                        <FontAwesomeIcon icon={faCss3Alt} />
+                        <FontAwesomeIcon icon={faCss3Alt} />
+                    </Icons>
                 </PL>
                 <Serve>
                     <Ht>SERVICES</Ht>
