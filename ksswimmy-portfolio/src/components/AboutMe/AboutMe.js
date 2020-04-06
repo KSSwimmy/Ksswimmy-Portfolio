@@ -3,7 +3,7 @@ import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import styled from 'styled-components'
 import LandingPageStars from '../../SVG/bodyStars.svg'
 import MyPic from '../../SVG/me.jpg'
-import Skills from '../Skills'
+
 
 
 

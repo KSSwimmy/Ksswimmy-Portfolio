@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import LandingPageStars from '../SVG/bodyStars.svg'
 import Arrow from '../SVG/arrow.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3Alt } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5 ,faCss3Alt, faJava, faJs, faPython } from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -94,10 +94,13 @@ width: 500px;
 margin: 15px;
 `
 const Icons = styled.span`
-font-size: 6rem;
+font-size: 7rem;
+width: 400px;
 text-align: center;
+margin: 0 auto;
 display: flex;
-
+justify-content: space-between;
+margin-top: 50px;
 
 `
 
@@ -196,8 +199,11 @@ const Skills = () => {
                 <PL>
                     <Ht>PROGRAMMING LANGUAGES</Ht>
                     <Icons>
+                        <FontAwesomeIcon icon={faHtml5} />
                         <FontAwesomeIcon icon={faCss3Alt} />
-                        <FontAwesomeIcon icon={faCss3Alt} />
+                        <FontAwesomeIcon icon={faJava} />
+                        <FontAwesomeIcon icon={faJs} />
+                        <FontAwesomeIcon icon={faPython} />
                     </Icons>
                 </PL>
                 <Serve>
