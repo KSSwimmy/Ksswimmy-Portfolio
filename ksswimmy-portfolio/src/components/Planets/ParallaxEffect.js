@@ -2,6 +2,7 @@ import React from 'react'
 import TitlePanel from '../Panels/TitlePanel'
 import TopNamePanel from '../Panels/TopNamePanel'
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
+import { Transition, animated } from "react-spring";
 import styled from 'styled-components'
 import TheSun from '../../SVG/sun.svg'
 import Earth from '../../SVG/earth.svg'
@@ -19,6 +20,7 @@ import Uranus from '../../SVG/uranus.svg'
 import Pluto from '../../SVG/pluto.svg'
 import AboutMe from '../AboutMe/AboutMe'
 import Skills from '../Skills'
+import Nav from '../Nav'
 
 const Page = styled.div`
 width: 100%;
@@ -168,6 +170,9 @@ const ParallaxEffect = () => {
           <TopNamePanel />
         </ParallaxLayer>
 
+        <ParallaxLayer offset={0}>
+          <Nav />
+        </ParallaxLayer>
        
     </Parallax>
   </Page>

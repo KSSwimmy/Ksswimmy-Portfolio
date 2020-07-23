@@ -2,7 +2,9 @@
 /* rest of app styles */
 
 html, body, .App {
-  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
   font-family: 'Exo 2', sans-serif;
   font-weight: 200;
   color: #DCE3FF;

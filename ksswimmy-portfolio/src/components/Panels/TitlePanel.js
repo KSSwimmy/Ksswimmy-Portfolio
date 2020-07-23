@@ -1,7 +1,7 @@
 import React from 'react';
-import 'antd/dist/antd.css';
-import BottomName from '../../SVG/BottomName.svg'
 import styled from 'styled-components'
+import BottomName from '../../SVG/BottomName.svg'
+
 
 
 const BottomPanel = styled.div`

@@ -84,7 +84,7 @@ const AboutMe = () => {
                             <p>I am a Full Stack Software Engineer and UX Designer from South Carolina with a background in design, retail, and hospitality. I'm capable of creating beautiful web applications and business branding design from top to bottom. Building awesome, functional, and eye catching products that people will use is my passion!</p> 
                         </FirstP>
                         <SecP>
-                            <p>I’m also a mobile Paint & Sip hostess, who I loves to paint on denim jackets from time to time! (The Painting Gallivanter)</p>
+                            <p>I’m also a mobile Paint & Sip hostess, can paint on your denim jackets from time to time! (The Painting Gallivanter)</p>
                         </SecP>
                     </TheParagraphDiv>
                 </AboutMeDiv>
